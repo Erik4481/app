@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>erikoo icons</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex: 1 1 300px;
+            max-width: 33.33%;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            flex: 1;
+        }
+
+        .row img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            background-color: black;
+        }
+
+        @media (max-width: 768px) {
+            .column {
+                max-width: 50%;
+            }
+            .row img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .column {
+                max-width: 33.33%;
+            }
+            .row img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="row">
+                <img src="./icons/football-jersey (1).png" alt="jersey">
+            </div>
+            <div class="row">
+                <img src="./icons/football-jersey.png" alt="jersey">
+            </div>
+            <div class="row">
+                <img src="./icons/football-jersey_1685021.png" alt="jersey">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="row">
+                <img src="./icons/football-shirt.png" alt="jersey">
+            </div>
+            <div class="row">
+                <img src="./icons/football.png" alt="jersey">
+            </div>
+            <div class="row">
+                <img src="./icons/jersey.png" alt="jersey">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="row">
+                <img src="./icons/kit.png" alt="jersey"">
+            </div>
+            <div class="row">
+                <img src="./icons/referee-jersey.png" alt="alt="jersey"">
+            </div>
+            <div class="row">
+                <img src="./icons/soccer-jersey (1).png" alt="alt="jersey"">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="row">
+                <img src="./icons/soccer-jersey.png" alt="jersey">
+            </div>
+            <div class="row">
+                <img src="./icons/soccer-jersey_919437.png" alt="jersey">
+            </div>
+            <div class="row">
+                <img src="./icons/soccer.png" alt="jersey">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
