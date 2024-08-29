@@ -9,7 +9,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: black;
         }
 
         body {
@@ -53,7 +52,6 @@
             width: 80px;
             height: 80px;
             object-fit: contain;
-            background-color: black;
         }
 
         @media (max-width: 768px) {
@@ -78,63 +76,96 @@
     </style>
 </head>
 <body>
+    <!--hiyo class ya data-url ndio utachange ukihost-->
     <div class="container">
         <div class="column">
             <div class="row">
-                <img src="./icons/football-jersey (1).png" alt="jersey">
+                <img src="./icons/football-jersey (1).png" alt="Icon 1" data-url="https://erik4481.github.io/app/icons/football-jersey (1).png">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy Link</button>
             </div>
             <div class="row">
-                <img src="./icons/football-jersey.png" alt="jersey">
+                <img src="./icons/football-jersey.png" alt="Icon 1" data-url="https://erik4481.github.io/app/icons/football-jersey.png">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy Link</button>
             </div>
             <div class="row">
-                <img src="./icons/football-jersey_1685021.png" alt="jersey">
+                <img src="./icons/football-jersey_1685021.png" alt="Icon 1" data-url="https://erik4481.github.io/app/icons/football-jersey_1685021.png">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy Link</button>
             </div>
         </div>
 
         <div class="column">
             <div class="row">
-                <img src="./icons/football-shirt.png" alt="jersey">
+                <img src="./icons/football-shirt.png" alt="Icon 1" data-url="https://erik4481.github.io/app/icons/football-shirt.png">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy Link</button>
             </div>
             <div class="row">
-                <img src="./icons/football.png" alt="jersey">
+                <img src="./icons/football.png" alt="Icon 1" data-url="https://erik4481.github.io/app/icons/football.png">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy Link</button>
             </div>
             <div class="row">
-                <img src="./icons/jersey.png" alt="jersey">
+                <img src="./icons/jersey.png" alt="Icon 1" data-url="https://erik4481.github.io/app/icons/jersey.png">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy Link</button>
             </div>
         </div>
 
         <div class="column">
             <div class="row">
-                <img src="./icons/kit.png" alt="jersey"">
+                <img src="./icons/kit.png" alt="Icon 1" data-url="https://erik4481.github.io/app/icons/kit.png">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy Link</button>
             </div>
             <div class="row">
-                <img src="./icons/referee-jersey.png" alt="alt="jersey"">
+                <img src="./icons/referee-jersey.png" alt="Icon 1" data-url="https://erik4481.github.io/app/icons/referee-jersey.png">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy Link</button>
             </div>
             <div class="row">
-                <img src="./icons/soccer-jersey (1).png" alt="alt="jersey"">
+                <img src="./icons/soccer-jersey (1).png" alt="Icon 1" data-url="https://erik4481.github.io/app/icons/soccer-jersey (1).png">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy Link</button>
             </div>
         </div>
 
         <div class="column">
             <div class="row">
-                <img src="./icons/soccer-jersey.png" alt="jersey">
+                <img src="./icons/soccer-jersey.png" alt="Icon 1" data-url="https://erik4481.github.io/app/icons/soccer-jersey.png">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy Link</button>
             </div>
             <div class="row">
-                <img src="./icons/soccer-jersey_919437.png" alt="jersey">
+                <img src="./icons/soccer-jersey_919437.png" alt="Icon 1" data-url="https://erik4481.github.io/app/icons/soccer-jersey_919437.png">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy Link</button>
             </div>
             <div class="row">
-                <img src="./icons/soccer.png" alt="jersey">
+                <img src="./icons/soccer.png" alt="Icon 1" data-url="https://erik4481.github.io/app/icons/soccer.png">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy Link</button>
             </div>
-<div class="row">
-                <img src="./icons/cross.png" alt="jersey">
+			<div class="row">
+                <img src="./icons/loading.png" alt="Icon 1" data-url="https://erik4481.github.io/app/icons/soccer.png">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy Link</button>
             </div>
-<div class="row">
-                <img src="./icons/yes.png" alt="jersey">
+			<div class="row">
+                <img src="./icons/cross.png" alt="Icon 1" data-url="https://erik4481.github.io/app/icons/soccer.png">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy Link</button>
             </div>
-<div class="row">
-                <img src="./icons/loading.png" alt="jersey">
+			<div class="row">
+                <img src="./icons/yes.png" alt="Icon 1" data-url="https://erik4481.github.io/app/icons/soccer.png">
+                <button class="copy-btn" onclick="copyToClipboard(this)">Copy Link</button>
             </div>
         </div>
     </div>
+    <script>
+        function copyToClipboard(button) {
+            const url = button.previousElementSibling.getAttribute('data-url');
+            
+            const tempInput = document.createElement('textarea');
+            tempInput.value = url;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            button.textContent = 'Copied!';
+            setTimeout(() => {
+                button.textContent = 'Copy Link';
+            }, 2000);
+        }
+    </script>
 </body>
 </html>
